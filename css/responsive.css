@@ -289,6 +289,7 @@
 	.contact_box .subtitle {font-size: 1em;}
 	.phone_number {margin: 15px 0;}
 	.first_screen_label {display: none;}
+	.first_screen_title {margin-top: 15px;}
 }
 @media only screen and (max-width: 375px) {
 	.first_screen_title {font-size: 2em;}
