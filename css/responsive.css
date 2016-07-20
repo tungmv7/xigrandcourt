@@ -284,10 +284,11 @@
 	.first_screen_img {display: none;}
 	.subtitle {margin-bottom: 20px;}
 	.service_desc_inner {padding: 20px 5px;}
-	.service_desc_inner ul {margin-left: 10px;}
+	/*.service_desc_inner ul {margin-left: 10px;}*/
 	.email_link {font-size: 1.2em;}
 	.contact_box .subtitle {font-size: 1em;}
 	.phone_number {margin: 15px 0;}
+	.first_screen_label {display: none;}
 }
 @media only screen and (max-width: 375px) {
 	.first_screen_title {font-size: 2em;}
