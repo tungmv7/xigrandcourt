@@ -458,8 +458,6 @@
 			loop: true,
 			plugins: ['youtube'],
 			success: function(media, node, player) {
-				console.log(media);
-				console.log(player);
 				media.play();
 			}
 		});
