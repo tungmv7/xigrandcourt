@@ -33,6 +33,8 @@
 
 			self.fullScreen.init();
 
+
+
 		},
 
 
@@ -66,11 +68,11 @@
 				self.wHeight = self.w.height();
 				self.imgBox = $('.slide_img_box').height();
 
-				$('.first_screen').height(self.wHeight);
+				// $('.first_screen').height(self.wHeight);
+
 				self.slide.css({
 					'padding-bottom': self.imgBox
 				});
-
 			},
 
 		},
@@ -126,7 +128,7 @@
 		    $(document).on('click',function(event){
 
 		    	if(!$(event.target).closest('.search_box').length){
-					$('.search_box').removeClass('active');		    		
+					$('.search_box').removeClass('active');
 		    	}
 
 		    });
@@ -191,7 +193,7 @@
 		    init: function () {
 
 		    	var self = this;
-		    	
+
 		    	self.w = $(window);
 		    	self.body = $('body');
 		    	self.nav = $('.navigation');
@@ -245,7 +247,7 @@
 
 		    	$('html,body').stop().animate({
 
-					scrollTop: offset
+					scrollTop: offset - 50
 
 		    	},1000,function(){
 
@@ -271,12 +273,12 @@
 		    			bottomOffset = $(self.section[i+1]).length ? $(self.section[i+1]).offset().top : offset + heightBox,
 		    			id = $(self.section[i]).attr('id'),
 		    			activItem = $('.navigation').find("a[href='" + "#" + id + "']").parent();
-		    		
+
 		    		$('.navigation li').removeClass('active');
 		    		$('.navigation_point li').removeClass('navigation_point_active');
 
 		    		if(self.wScroll + self.wHeightHalf > offset && self.wScroll + self.wHeightHalf < bottomOffset ){
-		    		
+
 		    			setTimeout(function(){
 
 		    			},1000)
@@ -286,7 +288,7 @@
 		    			return false;
 
 		    		}
-		    		
+
 		    	};
 
 		    },
@@ -310,7 +312,7 @@
 						else{
 
 							self.menuOpen();
-							
+
 						}
 
 					});
@@ -328,22 +330,22 @@
 		    		var self = this;
 
 		    		self.nav.addClass('open_menu');
-		    	
+
 		    	},
 
 		    	menuClose: function(){
 
 		    		var self = this;
-		    	
+
 		    		self.nav.removeClass('open_menu');
-		    		
+
 		    	},
 
 		    },
 
 		},
 
-		
+
 		/**
 		**	Google Map
 		**/
@@ -415,7 +417,7 @@
 
 		},
 
-		
+
 		/**
 		**	Anchor
 		**/
@@ -443,13 +445,24 @@
 		},
 
 
-		
+
 	}
 
 
 	$(document).ready(function(){
 
 		Core.DOMReady();
+
+		$('video').mediaelementplayer({
+			features: [],
+			loop: true,
+			plugins: ['youtube'],
+			success: function(media, node, player) {
+				console.log(media);
+				console.log(player);
+				media.play();
+			}
+		});
 
 	});
 

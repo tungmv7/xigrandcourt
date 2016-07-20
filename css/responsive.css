@@ -4,7 +4,7 @@
 @media only screen and (max-width: 1199px){
 
 	.first_screen{
-		min-height: 530px;
+		min-height: 480px;
 	}
 
 	.first_screen_label{
@@ -12,7 +12,11 @@
 	}
 
 	.service_desc_inner{
-		padding: 30px 100px;
+		padding: 20px;
+	}
+	.service_desc_inner ul > li,
+	.service_desc_inner p {
+		font-size: .8em
 	}
 
 }
@@ -21,6 +25,9 @@
 
 	body{min-width:768px;}
 
+	nav {
+		padding-right: 0;
+	}
 	.navigation>li:not(:last-child){
 		padding-right: 30px;
 	}
@@ -45,6 +52,29 @@
 		padding: 0 15px 10px;
 	}
 
+	.first_screen_img img {
+		max-width: 200px;
+	}
+	.first_screen_title {
+		font-size: 3em;
+	}
+	.first_screen_subtitle {
+		font-size: 1em;
+	}
+	h3 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+	.subtitle {
+		font-size: 1em;
+	}
+	#isotope_container {
+		padding-top: 25px;
+	}
+	.service_title {
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -61,7 +91,7 @@
 		position: fixed;
 		z-index: 9;
 		width: 200px;
-		top: 50px;
+		top: 0;
 		bottom: 0;
 		background-color: rgba(32,32,32,0.85);
 		border-top: 1px solid #0066cc;
@@ -105,7 +135,7 @@
 	}
 
 	.section_offset{
-		padding: 55px 0;
+		/*padding: 55px 0;*/
 	}
 
 	.blackout{
@@ -117,7 +147,7 @@
 	}
 
 	.first_screen_subtitle{
-		font-size: 20px;
+		font-size: 1em;
 	}
 
 	.btn,
@@ -134,7 +164,7 @@
 	}
 
 	.first_screen_title{
-		font-size: 50px;
+		font-size: 3em;
 	}
 
 	.phone_number{
@@ -251,6 +281,14 @@
 @media only screen and (max-width: 479px) {
 
 	body{min-width:300px;}
-
-
+	.first_screen_img {display: none;}
+	.subtitle {margin-bottom: 20px;}
+	.service_desc_inner {padding: 20px 5px;}
+	.service_desc_inner ul {margin-left: 10px;}
+	.email_link {font-size: 1.2em;}
+	.contact_box .subtitle {font-size: 1em;}
+	.phone_number {margin: 15px 0;}
+}
+@media only screen and (max-width: 375px) {
+	.first_screen_title {font-size: 2em;}
 }
