@@ -206,7 +206,7 @@
   #content{
 	  overflow-x:hidden;
 	  padding:0px 0px 0px 0px;
-    background-color: rgba(32,32,32,0.85);
+    background-color: #000B2E;
   }
 
   .back_to_top{
@@ -245,7 +245,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 0 0;
-      background-color: rgba(32,32,32,0.85);
+      background-color: #000B2E;
     }
 
     .section_offset h3,
@@ -704,7 +704,7 @@
 
     .service{
       width: 100%;
-      background-color: rgba(32,32,32,0.85);
+      background-color: #000B2E;
     }
 
     .service>*{
@@ -734,9 +734,9 @@
       transition: opacity 0.3s;
     }
 
-	.service:hover .service_img:before{
+	/*.service:hover .service_img:before{
 		opacity:1;
-	}
+	}*/
 
 	.service_img img{
       width: 100%;
@@ -744,7 +744,7 @@
 
     .service_desc{
       cursor: pointer;
-      background-color: rgba(32,32,32,0.85);
+      background-color: #000B2E;
     }
 
     .service_desc:before{
@@ -1356,7 +1356,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(32,32,32,0.85);
+    background-color: #000B2E;
   }
 
   .header_inner{
@@ -1392,7 +1392,7 @@
       width: 50px;
       height: 50px;
       color: #fff;
-      background-color: rgba(32,32,32,0.85);
+      background-color: #000B2E;
       border-top: 1px solid #0066cc;
       font-size: 20px;
       position: absolute;
@@ -1564,7 +1564,7 @@
     margin-bottom: 50px;
   }
   .first_screen_img img {
-    max-width: 500px;
+    max-width: 500px
   }
 
 /* ------------------------------------------------
