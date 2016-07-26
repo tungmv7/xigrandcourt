@@ -1,6 +1,6 @@
 function cstheme_parallax() {
 	"use strict";
-	
+
 	/* ------------------------------------------------
 	    Parallax
 		------------------------------------------------ */
@@ -14,7 +14,7 @@ function cstheme_parallax() {
 	    });
 
 	   }
-	   
+
 	if($(".cstheme_parallax").length){
 		$(".cstheme_parallax").each(function(){
 			$(this).parallax("50%", 0.2);
@@ -45,7 +45,20 @@ function cstheme_parallax() {
 					enabled: true,
 					duration: 300 // don't foget to change the duration also in CSS
 				}
-				
+
+			});
+
+			$('.service_img').magnificPopup({
+				delegate: '.gallery_item',
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				zoom: {
+					enabled: true,
+					duration: 300 // don't foget to change the duration also in CSS
+				}
+
 			});
 
         /* ------------------------------------------------
@@ -90,11 +103,11 @@ function cstheme_parallax() {
 		cstheme_parallax();
 
 	});
-	
+
 	jQuery(window).resize(function(){
-	
+
 		cstheme_parallax();
-		
+
 	});
 
 })(jQuery);

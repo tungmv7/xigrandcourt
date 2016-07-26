@@ -733,6 +733,9 @@
       -o-transition: opacity 0.3s;
       transition: opacity 0.3s;
     }
+    .service_img .gallery_item:after{
+      background: none;
+    }
 
 	/*.service:hover .service_img:before{
 		opacity:1;
